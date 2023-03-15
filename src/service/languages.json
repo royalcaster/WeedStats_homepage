@@ -1,0 +1,17 @@
+{
+    "de": {
+        "short": "de",
+        "navbar_idea": "Idee",
+        "navbar_features": "Funktionen",
+        "navbar_support": "Unterstützen",
+        "navbar_get_the_app": "Hol dir die App"
+    },
+
+    "en": {
+        "short": "en",
+        "navbar_idea": "Idea",
+        "navbar_features": "Features",
+        "navbar_support": "Support",
+        "navbar_get_the_app": "Get the app"
+    }
+}

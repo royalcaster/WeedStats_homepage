@@ -5,29 +5,41 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 
+//Service
+import languages from "./service/languages.json"
+
 const App = () => {
 
+  //State
   const [yOffset, setYOffset] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
+  const [language, setLanguage] = useState(languages.de);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    console.log(language);
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
   const handleScroll = () => {
     const currentYOffset = window.pageYOffset;
     console.log(currentYOffset);
-    const visible = yOffset > currentYOffset;
+    const visible = yOffset > currentYOffset || yOffset < 150;
 
     setYOffset(currentYOffset);
     setVisible(visible);
   }
 
+  const toggleLanguage = () => {
+    language.short == "de" ? setLanguage(languages.en) : setLanguage(languages.de);
+  }
+
   return (
+  
     <div className="app_container" onScroll={() => handleScroll()}>
+    
       <header>
-        <Navbar show={visible} />
+          <Navbar show={visible} language={language} toggleLanguage={() => toggleLanguage()}/>
       </header>
 
       <div style={{height: "100px"}}></div>
@@ -54,6 +66,7 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
 
 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
 
+      
     </div>
   );
 }
