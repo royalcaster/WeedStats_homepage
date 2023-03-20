@@ -185,6 +185,40 @@ p {
   /* text-align: justify; */
 }
 
+.tabbar_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabbar_item_container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.feature_panel_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature_panel_text {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  text-align: center;}
+
 /* MOBIL */
 @media only screen and (max-width: 800px) {
   .navbar_link_container {
@@ -257,5 +291,10 @@ p {
     border-radius: 20px;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .feature_panel_container {
+    display: flex;
+    flex-direction: row;
   }
 }
