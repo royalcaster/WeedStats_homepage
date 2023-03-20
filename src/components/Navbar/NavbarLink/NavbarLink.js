@@ -1,8 +1,8 @@
 import React from "react";
 
-const NavbarLink = ({ title }) => {
+const NavbarLink = ({ title, link, onClick }) => {
     return (
-        <a className="navbar_link">{title}</a>
+        <a className="navbar_link" onClick={() => onClick()} href={link}>{title}</a>
     )
 }
 

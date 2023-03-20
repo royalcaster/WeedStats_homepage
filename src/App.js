@@ -3,8 +3,13 @@ import { useState, useEffect } from 'react';
 
 //Style
 import './App.css';
+import Features from './components/Features/Features';
+import GetTheApp from './components/GetTheApp/GetTheApp';
 import HeroShot from './components/HeroShot/HeroShot';
+import Idea from './components/Idea/Idea';
+import Impressum from './components/Impressum/Impressum';
 import Navbar from './components/Navbar/Navbar';
+import Support from './components/Support/Support';
 
 //Service
 import languages from "./service/languages.json"
@@ -37,10 +42,25 @@ const App = () => {
     <div className="app_container" onScroll={() => handleScroll()}>
     
       <header>
-          <Navbar show={visible} language={language} toggleLanguage={() => toggleLanguage()}/>
+          <Navbar 
+            show={visible} 
+            language={language} 
+            toggleLanguage={() => toggleLanguage()} 
+            navLinks={["#idea", "#features", "#support", "#gettheapp"]}
+          />
       </header>
     
       <HeroShot language={language}/>
+
+      <Idea language={language} />
+
+      <Features language={language} />
+
+      <Support language={language} />
+
+      <GetTheApp language={language} />
+
+      <Impressum language={language} />
       
     </div>
   );

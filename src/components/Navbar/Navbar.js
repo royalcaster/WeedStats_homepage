@@ -8,7 +8,7 @@ import LanguageSelector from './LanguageSelector/LanguageSelector';
 //Custom Components
 import NavbarLink from './NavbarLink/NavbarLink'
 
-const Navbar = ({ show, language, toggleLanguage }) => {
+const Navbar = ({ show, language, toggleLanguage, navLinks, onLinkClick }) => {
 
   //State
   const [className, setClassName] = useState("navbar_container");
@@ -28,10 +28,10 @@ const Navbar = ({ show, language, toggleLanguage }) => {
 
     {showMenu ? 
     <div className='menu_container'>
-      <NavbarLink title={language.navbar_idea}/>
-      <NavbarLink title={language.navbar_features}/>
-      <NavbarLink title={language.navbar_support}/>
-      <NavbarLink title={language.navbar_get_the_app}/>
+      <NavbarLink title={language.navbar_idea} link={navLinks[0]} onClick={() => setShowMenu(false)}/>
+      <NavbarLink title={language.navbar_features} link={navLinks[1]} onClick={() => setShowMenu(false)}/>
+      <NavbarLink title={language.navbar_support} link={navLinks[2]} onClick={() => setShowMenu(false)}/>
+      <NavbarLink title={language.navbar_get_the_app} link={navLinks[3]} onClick={() => setShowMenu(false)}/>
       <LanguageSelector language={language} toggleLanguage={toggleLanguage}/>
     </div> : null}
 
@@ -47,10 +47,10 @@ const Navbar = ({ show, language, toggleLanguage }) => {
         </div>
       </div>
       <div className='navbar_link_container'>
-        <NavbarLink title={language.navbar_idea}/>
-        <NavbarLink title={language.navbar_features}/>
-        <NavbarLink title={language.navbar_support}/>
-        <NavbarLink title={language.navbar_get_the_app}/>
+        <NavbarLink title={language.navbar_idea} link={navLinks[0]}/>
+        <NavbarLink title={language.navbar_features} link={navLinks[1]}/>
+        <NavbarLink title={language.navbar_support} link={navLinks[2]}/>
+        <NavbarLink title={language.navbar_get_the_app} link={navLinks[3]}/>
         <LanguageSelector language={language} toggleLanguage={toggleLanguage}/>
       </div>
 

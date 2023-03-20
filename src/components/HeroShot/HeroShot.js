@@ -14,7 +14,7 @@ const HeroShot = ({ language }) => {
   },[]);
 
   return (
-    <div className='content_container'>
+    <div className='content_container' style={{padding: "0px"}}>
         <div className='heroshot_gif_container' style={{padding: "20px", height: "100vh", display: "flex", flexDirection: "row"}}>
     
         
@@ -39,7 +39,7 @@ const HeroShot = ({ language }) => {
         </div>
 
         <div style={{flex: 2, display: "flex", alignItems: "center"}}>
-            <button className='heroshot_download_button' title={language.navbar_get_the_app}>{language.navbar_get_the_app}</button>
+            <a className='heroshot_download_button' href='#gettheapp' title={language.navbar_get_the_app}>{language.navbar_get_the_app}</a>
         </div>
 
         </div>

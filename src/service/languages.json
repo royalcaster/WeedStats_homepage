@@ -1,10 +1,26 @@
 {
     "de": {
         "short": "de",
+
         "navbar_idea": "Idee",
         "navbar_features": "Funktionen",
         "navbar_support": "Unterstützen",
-        "navbar_get_the_app": "Hol dir die App"
+        "navbar_get_the_app": "Hol dir die App",
+
+        "idea_heading": "Idee",
+        "idea_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "features_heading": "Funktionen",
+        "features_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "support_heading": "Unterstützen",
+        "support_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "get_the_app_heading": "Hol dir die App",
+        "get_the_app_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "impressum_heading": "Impressum",
+        "impressum_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier."
     },
 
     "en": {
@@ -12,6 +28,21 @@
         "navbar_idea": "Idea",
         "navbar_features": "Features",
         "navbar_support": "Support",
-        "navbar_get_the_app": "Get the app"
+        "navbar_get_the_app": "Get the app",
+
+        "idea_heading": "Idea",
+        "idea_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "features_heading": "Features",
+        "features_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "support_heading": "Support",
+        "support_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "get_the_app_heading": "Get the app",
+        "get_the_app_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
+
+        "impressum_heading": "Impressum",
+        "impressum_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier."
     }
 }
