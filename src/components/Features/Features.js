@@ -21,7 +21,12 @@ const Features = ({ language }) => {
             <div className="feature_panel_container">
 
             <div style={{flex: 1}}>
-                {view === "main" ? <p className="feature_panel_text">{language.features_main}</p> : null}
+                {view === "main" ? <>
+                    {language.features_main.map((text) => {
+                        return <p className="feature_panel_text">{text}</p>
+                    })}
+                </> : null}
+                {view === "stats" ? <p className="feature_panel_text">{language.features_stats}</p> : null}
             </div>
 
             <div style={{flex: 1}}>

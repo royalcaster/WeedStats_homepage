@@ -12,7 +12,11 @@
 
         "features_heading": "Funktionen",
         "features_text": "Benutze die Tabs, um dir die verschiedenen Funktionen in Aktion anzusehen.",
-        "features_main": "So funktionieren die Counter.",
+        "features_main": ["durch Erhöhen der Counter deine Freunde benachrichtigen", "im Level aufsteigen"],
+        "features_stats": ["Statistiken und Maßzahlen für deinen Konsum", "Strähnen und Pausen", "gesamter Verlauf deiner Aktivitäten"],
+        "features_map": ["letzte Aktivitäten deiner Freunde", "Heatmap deines Konsums"],
+        "features_config": ["Counter aktivieren und deaktivieren", "Einstellungen zu Datenschutz und Privatsphäre treffen"],
+        "features_friends": ["Freunde besuchen", "Freundschaftsanfragen beantworten", "Dein Konto einsehen", "Tutorial wiederholen", "WeedStats unterstützen"],
 
         "support_heading": "Unterstützen",
         "support_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
@@ -36,7 +40,11 @@
 
         "features_heading": "Features",
         "features_text": "Use the tabs below to see features in action.",
-        "features_main": "So funktionieren die Counter.",
+        "features_main": ["Notify your friends by increasing the counters", "Climb Levels"],
+        "features_stats": ["Statistics and metrics for your consumption", "Streaks and breaks", "Entire history of your activities"],
+        "features_map": ["Recent activities of your friends", "Heatmap of your consumption"],
+        "features_config": ["Activate and deactivate counters", "Make settings for data protection and privacy"],
+        "features_friends": ["Visit friends", "Answer friend requests", "View your account", "Rewatch tutorial", "Support WeedStats"],
 
         "support_heading": "Support",
         "support_text": "Hier steht etwas über die Idee von WeedStats, bitte noch ausfüllen Hallo Hier.",
