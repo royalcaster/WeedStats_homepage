@@ -219,9 +219,15 @@ p {
   font-size: 1rem;
   background-color: #1E2132;
   padding: 0.75rem;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  display: block;
+  border-left: 2px solid #409FFF;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 /* MOBIL */
@@ -257,6 +263,12 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  .impressum_flex_container {
+    flex-direction: column;
+    display: flex;
+    max-width: 1000px;
   }
 }
 
@@ -301,5 +313,14 @@ p {
   .feature_panel_container {
     display: flex;
     flex-direction: row;
+  }
+
+  .impressum_flex_container {
+    flex-direction: row;
+    display: flex;
+    max-width: 1200px;
+    align-self: "center";
+    margin-right: auto;
+    margin-left: auto;
   }
 }
